@@ -121,7 +121,8 @@ ansible_ec2_setup/
 │   ├── setup_https_redirect.yml
 │   ├── setup_goaccess.yml
 │   └── setup_sshd_config.yml
-├── files/                      # 設定ファイルなど
+├── files/
+│ └── httpd.conf.backup # ← バックアップファイル
 
 .github/
 └── workflows/
