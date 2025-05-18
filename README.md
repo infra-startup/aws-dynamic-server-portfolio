@@ -111,8 +111,6 @@ HTTP→HTTPS リダイレクト設定
 
 📁 ansibleディレクトリ構成例
 ```plaintext
-コピーする
-編集する
 ansible_ec2_setup/
 ├── site.yml                    # 各構成をまとめて呼び出すメインプレイブック
 ├── inventory                   # インベントリ（localhost指定）
@@ -125,7 +123,6 @@ ansible_ec2_setup/
 │   ├── setup_goaccess.yml
 │   └── setup_sshd_config.yml
 ├── files/                      # 設定ファイルなど
-└── ansible-output.txt          # Ansible 実行ログ
 
 .github/
 └── workflows/
