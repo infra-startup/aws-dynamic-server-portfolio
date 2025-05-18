@@ -24,4 +24,4 @@ jobs:
             cd ec2-https-webserver/ansible_ec2_setup
             ansible-playbook -i localhost, site.yml
 EOF
-n
+
