@@ -81,6 +81,9 @@ Webブラウザからアクセス解析の可視化が可能です。
 ├── jail.d/             # jailルール設定（例：sshd.conf）
 ├── filter.d/           # フィルタ定義（ログのパターン）
 ├── fail2ban.conf       # 本体設定
+
+```
+
 ⚙️ 自動化構成（Ansible + Route 53）
 Ansibleでサーバ構築を自動化し、Route 53でDNS設定も一元管理しています。
 
@@ -107,7 +110,7 @@ HTTP→HTTPS リダイレクト設定
 📄 ▶ Ansible 実行ログを見る
 
 📁 ansibleディレクトリ構成例
-plaintext
+```plaintext
 コピーする
 編集する
 ansible_ec2_setup/
@@ -127,34 +130,17 @@ ansible_ec2_setup/
 .github/
 └── workflows/
     └── deploy.yml              # GitHub Actions ワークフロー定義
+
+```
+
 🚀 CI/CD（継続的インテグレーション & デプロイ）
 GitHub Actions を使って、以下のような CI/CDパイプラインを構築しています。
 
 ✅ 流れ
-GitHub の main ブランチにコードが push されると、自動でワークフローが起動（CI）
+自動でワークフローが起動（CI）
 
 GitHub Actions が構成エラー（Ansibleの構文や設定ミス）をチェック
 
 問題がなければ EC2 に SSH 接続（CD）
 
 ansible-playbook を実行し、構成が本番サーバに即時反映
-
-✅ 特徴
-.github/workflows/deploy.yml により自動実行
-
-ansible-playbook によって構成の検証と反映を一括で処理
-
-GitHub Secrets により SSH鍵・接続先情報を安全に管理
-
-手動ログイン（TeraTerm）とも併用可能な安全設計
-
-CI（構成検証）＋ CD（自動反映）の両方を一貫して実現
-
-✅ 使用技術
-GitHub Actions（CI/CDパイプライン）
-
-Ansible（構成管理）
-
-Amazon EC2（本番環境）
-
-SSH秘密鍵（Secrets管理で安全な接続）
