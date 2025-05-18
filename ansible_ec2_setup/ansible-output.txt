@@ -41,13 +41,13 @@ TASK [確認用ログ出力] ***************************************************
 changed: [localhost]
 
 TASK [Download goaccess tar.gz] ************************************************
-changed: [localhost]
+ok: [localhost]
 
 TASK [ビルドに必要なパッケージをインストール] **********************************
 ok: [localhost]
 
 TASK [GoAccess ソースを解凍] ***************************************************
-changed: [localhost]
+ok: [localhost]
 
 TASK [configure] ***************************************************************
 changed: [localhost]
@@ -68,5 +68,5 @@ TASK [sshd 再起動] **********************************************************
 changed: [localhost]
 
 PLAY RECAP *********************************************************************
-localhost                  : ok=22   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+localhost                  : ok=22   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
