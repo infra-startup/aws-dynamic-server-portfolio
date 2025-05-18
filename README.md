@@ -113,7 +113,6 @@ HTTP→HTTPS リダイレクト設定
 ```plaintext
 ansible_ec2_setup/
 ├── site.yml                    # 各構成をまとめて呼び出すメインプレイブック
-├── inventory                   # インベントリ（localhost指定）
 ├── tasks/
 │   ├── setup_apache.yml
 │   ├── setup_certbot.yml
