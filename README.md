@@ -107,7 +107,7 @@ HTTP→HTTPS リダイレクト設定
 構成はすべてAnsibleにより自動化されています。
 実行結果の全体ログを以下にまとめています：
 
-📄 ▶ Ansible 実行ログを見る
+📄 ▶ [Ansible 実行ログを見る](ansible-output.txt)
 
 📁 ansibleディレクトリ構成例
 ```plaintext
