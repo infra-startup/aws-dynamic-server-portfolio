@@ -1,5 +1,4 @@
-# ansible_ec2_setup/site.yml
-- hosts: all
+- hosts: localhost
   become: true
   connection: local
 
