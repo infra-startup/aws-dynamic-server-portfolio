@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>前野翔利 | ポートフォリオ</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: "Helvetica", "Arial", sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #f0f0f0;
+      padding: 1em;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #333;
+    }
+    section {
+      padding: 4em 1em;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2, h3 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+    .hero {
+      text-align: center;
+      padding: 4em 1em;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+    }
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      background: #f0f0f0;
+      position: relative;
+    }
+    ul {
+      margin-bottom: 1em;
+    }
+    #about ul:last-of-type {
+      margin-bottom: 0.5em;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #333;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    .back-to-top:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!-- 写真は後で差し替え -->
+    <img src="your-photo.jpg" alt="プロフィール画像">
+    <h1>前野翔利</h1>
+    <p>サーバーエンジニア志望｜LPIC1｜Webデザイン技能検定3級｜Unityゲーム開発（趣味）</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      2013年に大阪府立堺工科高等学校を卒業。現在は就労移行支援を受けながら、ITスキルの習得に励んでいます。<br><br>
+      Linuxのサーバ構築に関心があり、LPIC-1を約4ヶ月で取得しました。読書や基礎数学から学び直しながら、自分のペースでコツコツ積み上げています。<br><br>
+      趣味でUnityを使ったゲーム制作も経験し、Udemy講座を10本以上修了しました。
+    </p>
+
+    <h3>資格学習の経験</h3>
+    <p>
+      最初は基本情報技術者試験に挑戦し、400時間以上勉強しました。午前は合格できましたが、午後の長文問題に苦戦し、合格には至りませんでした。<br><br>
+      Unityでの開発経験もあり、プログラミングには自信がありましたが、文章を読み解く力が課題でした。<br><br>
+      一方、セキュリティ分野やインフラ系は得意で、実際に手を動かしながら学ぶ方が自分に合っていると実感。<br>
+      専門的なLPICの学習に切り替えたことで、無理なく継続でき、短期間で合格できました。
+    </p>
+
+    <h3>今後の目標</h3>
+    <p>
+      サーバーエンジニアとして働くことを目指し、就職活動と並行してLPIC-2にも挑戦していく予定です。<br>
+      ブランクや未経験を補うため、地道に実践力を身につけたいと考えています。
+    </p>
+
+    <h3>自分の強み・姿勢</h3>
+    <p>
+      自分の強みはまだ模索中ですが、失敗や挫折を経験しても学びを止めず、方向を見直しながら前に進んでこられました。<br><br>
+      周囲からは「柔軟に切り替えながらも継続できるところがすごい」と言われたことがあります。<br>
+      今は完璧を求めすぎず、小さな挑戦を重ねることを意識しています。
+    </p>
+
+    <h3>スキル</h3>
+    <ul>
+      <li>LPIC-1（取得済み）</li>
+      <li>Webデザイン技能検定3級</li>
+      <li>Unityゲーム制作（Udemy講座10本修了）</li>
+      <li>基礎的なLinux操作・サーバ構築</li>
+    </ul>
+
+    <h3>趣味</h3>
+    <ul>
+      <li>読書（5分から始めた習慣）</li>
+      <li>ゲーム</li>
+      <li>料理</li>
+    </ul>
+  </section>
+
+  <section id="works">
+    <h2>Works</h2>
+    <div>
+      <h3>EC2上のHTTPS Webサーバ構築</h3>
+      <p>
+        AWS EC2にApacheを構築し、Let's EncryptでHTTPS化。Basic認証の導入とGoAccessによるアクセスログの可視化も行いました。
+      </p>
+      <p>
+        ▶ GitHub: <a href="https://github.com/infra-startup/ec2-https-webserver" target="_blank">ec2-https-webserver</a><br>
+        ▶ レポートページ: <a href="https://infra-startup.github.io/ec2-https-webserver/report.html" target="_blank">GoAccessレポート</a>
+      </p>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:maeno.portfolio@gmail.com">maeno.portfolio@gmail.com</a></p>
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2025 前野翔利</p>
+  </footer>
+
+  <a href="#" class="back-to-top">▲ TOP</a>
+
+</body>
+</html>
+
+ 
