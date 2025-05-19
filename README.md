@@ -7,14 +7,6 @@ LPICを勉強して、実際にAWSのサーバ（EC2）でWebサイトを作っ�
 
 ---
 
-### 🌐 サイトURL
-
-- [https://mytest-portfolio.xyz](https://mytest-portfolio.xyz)
-- [https://mytest-portfolio.xyz/secret](https://mytest-portfolio.xyz/secret)  - (Basic認証あり）
-- [https://mytest-portfolio.xyz/report.html](https://mytest-portfolio.xyz/report.html) - サンプルレポートページ
-
----
-
 ## 🗂 サーバ構成図
 
 以下は、Amazon EC2 上に構築した Web サーバの全体構成図です。
@@ -141,3 +133,21 @@ GitHub Actions が構成エラー（Ansibleの構文や設定ミス）をチェ�
 問題がなければ EC2 に SSH 接続（CD）
 
 ansible-playbook を実行し、構成が本番サーバに即時反映
+
+---
+
+## 🔗 関連リンク
+
+- 💻 ポートフォリオ（GitHub Pages）  
+  https://infra-startup.github.io/ec2-https-webserver/
+
+- 📘 GitHubリポジトリ  
+  https://github.com/infra-startup/ec2-https-webserver
+
+- 📊 GoAccess レポートページ  
+  https://infra-startup.github.io/ec2-https-webserver/report.html
+
+- 🔒 Apache Basic認証ページ（開発環境用）  
+  ※アクセスにはユーザー名とパスワードが必要です  
+  https://mytest-portfolio.xyz/secret/
+
