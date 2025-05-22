@@ -1,11 +1,9 @@
-# ansible_ec2_setup/tasks/setup_certbot.yml
-
-- name: Certbot & Apache plugin install
+- name: Certbot および Apache プラグインのインストール
   yum:
     name: certbot-apache
     state: present
 
-- name: Obtain/renew Let’s Encrypt cert
+- name: Let’s Encrypt 証明書の取得または更新
   command: >-
     certbot --apache -n --agree-tos
             -m admin@{{ domain_name }}
@@ -15,7 +13,7 @@
     creates: /etc/letsencrypt/live/{{ domain_name }}/fullchain.pem
   notify: reload httpd
 
-- name: Ensure /etc/cron.d exists
+- name: /etc/cron.d ディレクトリが存在することを確認
   file:
     path: /etc/cron.d
     state: directory
@@ -23,7 +21,7 @@
     group: root
     mode: '0755'
 
-- name: Add certbot auto-renew cron job
+- name: Certbot 自動更新用の cron ジョブを追加
   copy:
     dest: /etc/cron.d/certbot-renew
     content: |

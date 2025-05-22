@@ -1,4 +1,4 @@
-- name: Download goaccess tar.gz
+- name: GoAccess の tar.gz をダウンロード
   get_url:
     url: https://tar.goaccess.io/goaccess-1.7.2.tar.gz
     dest: /tmp/goaccess-1.7.2.tar.gz
@@ -20,17 +20,17 @@
     dest: /tmp/
     remote_src: yes
 
-- name: configure
+- name: GoAccess を configure
   command: ./configure --enable-utf8
   args:
     chdir: /tmp/goaccess-1.7.2
 
-- name: make
+- name: GoAccess を make
   command: make
   args:
     chdir: /tmp/goaccess-1.7.2
 
-- name: make install
+- name: GoAccess を make install
   command: make install
   become: true
   args:
