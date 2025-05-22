@@ -11,7 +11,7 @@ LPICを勉強して、実際にAWSのサーバ（EC2）でWebサイトを作っ�
 
 以下は、Amazon EC2 上に構築した Web サーバの全体構成図です。
 
-![EC2構成図](./images/ec2-architecture.png)
+![EC2を含むWebサーバ全体の構成](infra-architecture-diagram.png)
 
 ---
 
