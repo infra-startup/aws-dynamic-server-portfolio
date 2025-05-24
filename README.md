@@ -16,8 +16,7 @@ LPICを勉強して、実際にAWSのサーバ（EC2）でWebサイトを作っ�
 ---
 
 ## 🧩 ハイブリッド構成について
-
-このプロジェクトでは、**Apacheでの動的Webサーバ構築**と、**GitHub Pagesによる静的サイト公開**を組み合わせたハイブリッド構成を採用しています。
+このプロジェクトでは、**ApacheによるHTTPS対応の静的Webサーバ構築**と、**GitHub Pagesによる静的サイト公開**を組み合わせたハイブリッド構成を採用しています。
 
 - 🔧 **Apache (Amazon Linux + Ansible + Let's Encrypt)**  
   EC2上にApacheを構築し、HTTPS対応・Basic認証・GoAccessによるログ可視化を行う「実運用を想定した動的サーバ」を構築しています。
@@ -139,7 +138,21 @@ GitHub Actions を使って、以下のような CI/CDパイプラインを構�
 - `ansible-playbook` を実行し、構成が本番サーバに即時反映
 
 ---
+## 🧩 LAMP構成と運用対応の実践（拡張構成）
 
+LAMP構成（Linux, Apache, MySQL, PHP）を用いた WordPress 構築と、
+GoAccess によるログ可視化、fail2ban によるブロックを組み合わせたセキュリティ対策に取り組んでいます。
+また、以下のような実践的な運用演習も実施しています：
+
+- WordPress 構築による動的Webサーバ理解（PHPの基本含む）
+- GoAccess によるログの可視化と fail2ban によるIPブロック
+- 異常検知 → SSH 対応 → 復旧までを模擬する一連の運用訓練
+- AMI（Amazon Machine Image）による構成のテンプレート化
+- IAM ロールを用いた S3 等 AWS サービスとの連携設定
+
+構築だけでなく、**運用・障害対応までを含めた実践的なスキルの習得**を目指しています。
+
+---
 ## 🔗 関連リンク
 
 - 💻 ポートフォリオ（GitHub Pages）  
