@@ -19,7 +19,7 @@ LPICを勉強して、実際にAWSのサーバ（EC2）でWebサイトを作っ�
 このプロジェクトでは、**ApacheによるHTTPS対応の静的Webサーバ構築**と、**GitHub Pagesによる静的サイト公開**を組み合わせたハイブリッド構成を採用しています。
 
 - 🔧 **Apache (Amazon Linux + Ansible + Let's Encrypt)**  
-  EC2上にApacheを構築し、HTTPS対応・Basic認証・GoAccessによるログ可視化を行う「実運用を想定した動的サーバ」を構築しています。
+  EC2上にApacheを構築し、静的コンテンツの配信やHTTPS通信の処理、Basic認証、GoAccessによるログ可視化などを担う「実運用を想定したWebサーバ」として利用しています。
 
 - 🌐 **GitHub Pages (静的HTML公開)**  
   `docs/` 配下にポートフォリオ用の静的HTMLを配置し、GitHub Pages で即時公開。閲覧用ポートフォリオとして利用しています。
