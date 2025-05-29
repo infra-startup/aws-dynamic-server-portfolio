@@ -49,7 +49,7 @@ ALB、RDS、EFS、IAM、CloudWatch、WAF などを活用し、**可用性・自�
 ## 🔗 関連リンク
 
 - 💻 ポートフォリオ（GitHub Pages）  
-  https://infra-startup.github.io/ec2-https-webserver/
+  https://infra-startup.github.io/aws-dynamic-server-portfolio/
 
 - 📘 GitHubリポジトリ  
-  https://github.com/infra-startup/ec2-https-webserver
+  https://github.com/infra-startup/aws-dynamic-server-portfolio
