@@ -128,19 +128,26 @@
     </ul>
   </section>
 
-  <section id="works">
-    <h2>Works</h2>
-    <div>
-      <h3>EC2上のHTTPS Webサーバ構築</h3>
-      <p>
-        AWS EC2にApacheを構築し、Let's EncryptでHTTPS化。Basic認証の導入とGoAccessによるアクセスログの可視化も行いました。
-      </p>
-      <p>
-        ▶ GitHub: <a href="https://github.com/infra-startup/ec2-https-webserver" target="_blank">ec2-https-webserver</a><br>
-        ▶ レポートページ: <a href="https://infra-startup.github.io/ec2-https-webserver/report.html" target="_blank">GoAccessレポート</a>
-      </p>
-    </div>
-  </section>
+<section id="works">
+  <h2>Works</h2>
+  <div>
+    <h3>動的Webサーバ構成（ALB + RDS + AMI）</h3>
+    <p>
+      最初は静的サーバのポートフォリオを構築していましたが、学習を進める中でAWS上に本番環境を想定した動的Webサーバ構成へと発展させました。ALBやRDS、EFS、IAM、CloudWatch、WAFなどを活用し、実践的な構成・自動化・セキュリティ対応を実装しています。
+    </p>
+    <p>
+      オートスケーリングやAMIによる復旧自動化、CloudWatchによる障害検知、セキュリティグループ・WAFの制御など、インフラ構成の冗長性・再現性を重視しています。
+    </p>
+
+    <h4>インフラ構成図</h4>
+    <img src="images/dynamic-architecture.png" alt="インフラ構成図" style="max-width:100%; border:1px solid #ccc; padding:5px;">
+
+    <p>
+      ▶ GitHub: <a href="https://github.com/infra-startup/ec2-https-webserver" target="_blank">ec2-https-webserver</a>
+    </p>
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
