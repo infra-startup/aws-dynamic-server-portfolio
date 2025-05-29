@@ -1,6 +1,0 @@
-.htpasswd
-secret/
-*.key
-*.pem
-*.crt
-*.env
