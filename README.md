@@ -7,7 +7,7 @@ ALB、RDS、EFS、IAM、CloudWatch、WAF などを活用し、**可用性・自�
 
 ## ✅ 構成図
 
-![インフラ構成図](./docs/images/dynamic-architecture.png)
+![インフラ構成図](./images/dynamic-architecture.png)
 
 ---
 
