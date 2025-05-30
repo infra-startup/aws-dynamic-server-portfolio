@@ -84,8 +84,7 @@
   </header>
 
   <section class="hero">
-    <!-- 写真は後で差し替え -->
-    <img src="your-photo.jpg" alt="プロフィール画像">
+    <img src="images/portfoliophoto.jpg" alt="プロフィール画像">
     <h1>前野翔利</h1>
     <p>サーバーエンジニア志望｜LPIC1｜Webデザイン技能検定3級｜Unityゲーム開発（趣味）</p>
   </section>
@@ -133,14 +132,17 @@
   <div>
     <h3>動的Webサーバ構成（ALB + RDS + AMI）</h3>
     <p>
-      最初は静的サーバのポートフォリオを構築していましたが、学習を進める中でAWS上に本番環境を想定した動的Webサーバ構成へと発展させました。ALBやRDS、EFS、IAM、CloudWatch、WAFなどを活用し、実践的な構成・自動化・セキュリティ対応を実装しています。
+      最初は静的サーバのポートフォリオを構築していましたが、学習を進める中でAWS上に本番環境を想定した動的Webサーバ構成へと発展させました。ALBやRDS、EFS、IAM、CloudWatch、WAFなどを活用し、実践的な構成・冗長化・セキュリティ対応を実装しています。
     </p>
     <p>
-      オートスケーリングやAMIによる復旧自動化、CloudWatchによる障害検知、セキュリティグループ・WAFの制御など、インフラ構成の冗長性・再現性を重視しています。
+    　意図的にサーバーに負荷をかけたり構成を削除したりすることで、アラーム検知から対応、構築の再生成までの復旧作業を主に学習を行いました。
+    </p>
+    <p>
+      オートスケーリングによる冗長化や、AMIを用いた構成の再現、CloudWatchによる障害検知と通知、セキュリティグループやWAFの制御などを通じて、インフラ構成の可用性と再現性を重視しています。
     </p>
 
     <h4>インフラ構成図</h4>
-    <img src=""C:\Users\81808\aws-dynamic-server-portfolio\images\dynamic-architecture.png"" alt="インフラ構成図" style="max-width:100%; border:1px solid #ccc; padding:5px;">
+    <img src="images/dynamic-architecture.png" alt="インフラ構成図" style="max-width:100%; border:1px solid #ccc; padding:5px;">
 
     <p>
       ▶ GitHub: <a href="https://github.com/infra-startup/aws-dynamic-server-portfolio.git" target="_blank">aws-dynamic-server-portfolio</a>
