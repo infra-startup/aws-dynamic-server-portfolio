@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>前野翔利 | ポートフォリオ</title>
+  <title>前野翔利 | AWSインフラ構成ポートフォリオ（サーバーエンジニア志望）</title>
   <style>
     html {
       scroll-behavior: smooth;
@@ -135,7 +135,7 @@
       最初は静的サーバのポートフォリオを構築していましたが、学習を進める中でAWS上に本番環境を想定した動的Webサーバ構成へと発展させました。ALBやRDS、EFS、IAM、CloudWatch、WAFなどを活用し、実践的な構成・冗長化・セキュリティ対応を実装しています。
     </p>
     <p>
-    　意図的にサーバーに負荷をかけたり構成を削除したりすることで、アラーム検知から対応、構築の再生成までの復旧作業を主に学習を行いました。
+    　意図的にサーバーに高負荷をかけたり、構成を部分的に削除することで、CloudWatchアラームの検知から `df` や `top` コマンドを用いたリソース調査、再構築までの復旧対応を一連で体験しました。
     </p>
     <p>
       オートスケーリングによる冗長化や、AMIを用いた構成の再現、CloudWatchによる障害検知と通知、セキュリティグループやWAFの制御などを通じて、インフラ構成の可用性と再現性を重視しています。
@@ -143,16 +143,15 @@
 
     <h4>インフラ構成図</h4>
     <img src="images/dynamic-architecture.png" alt="インフラ構成図" style="max-width:100%; border:1px solid #ccc; padding:5px;">
-
-    <p>
-      ▶ GitHub: <a href="https://github.com/infra-startup/aws-dynamic-server-portfolio.git" target="_blank">aws-dynamic-server-portfolio</a>
-    </p>
   </div>
 </section>
 
 
   <section id="contact">
     <h2>Contact</h2>
+    <p>
+      ▶ GitHub: <a href="https://github.com/infra-startup/aws-dynamic-server-portfolio.git" target="_blank">aws-dynamic-server-portfolio</a>
+    </p>
     <p>Email: <a href="mailto:maeno.portfolio@gmail.com">maeno.portfolio@gmail.com</a></p>
   </section>
 
