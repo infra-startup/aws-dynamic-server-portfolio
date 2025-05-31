@@ -10,7 +10,7 @@ Auto Scaling、RDS、EFS、ALB、WAF、IAM、CloudWatchなどを用いて、**�
 
 ## 📊 インフラ構成図
 
-![インフラ構成図](images/dynamic-architecture.png)
+![インフラ構成図](..images/dynamic-architecture.png)
 
 構成図は draw.io（diagrams.net）で作成し、全体像を視覚的に整理しています。
 
