@@ -63,6 +63,15 @@ Auto Scaling、RDS、EFS、ALB、WAF、IAM、CloudWatchなどを用いて、**�
 
 ---
 
+### 📸 スクリーンショット一覧
+
+アラームや証明書などの動作確認の証拠として、以下のスクリーンショットを `docs/images/` フォルダに格納しています。
+
+- `cloudwatch-device-alarm.png`：CPU、メモリ、ディスク使用率に対するアラーム
+- `cloudwatch-alarm-auto-scaling.png`：Auto Scaling のトリガーとして設定したアラーム
+- `https-cert-valid.png`：HTTPS証明書が正常に適用されていることを示す画面
+
+---
 ## 📫 お問い合わせ
 
 ポートフォリオに関するご質問・ご連絡は下記までお願いいたします。
