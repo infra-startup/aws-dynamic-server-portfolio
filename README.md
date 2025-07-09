@@ -1,8 +1,9 @@
 # AWS インフラ構成ポートフォリオ
 
-このリポジトリは、AWS上に構築した本番環境を想定した**動的Webサーバ構成**の学習成果をまとめたものです。  
-Auto Scaling、RDS、EFS、ALB、WAF、IAM、CloudWatchなどを用いて、**高可用性・セキュリティ・拡張性**を意識した構成を実践しました。  
-当初は静的サーバ構成（AnsibleやGoAccess等）からスタートしましたが、学習の進展に合わせてより**実務に近い動的インフラ構成**へと発展させました。
+このリポジトリは、AWS上に構築した本番環境を想定したLinux + Apacheによる動的Webサーバ構成の学習成果をまとめたものです。
+Auto Scaling、RDS、EFS、ALB、WAF、IAM、CloudWatchなどを組み合わせ、高可用性・セキュリティ・拡張性を意識したインフラ構築を実践しました。
+
+当初は静的サーバ構成（AnsibleやGoAccessを利用）から学習を始め、WordPressによる動的サーバ構築も行いましたが、動的運用はコストや可用性の観点からポートフォリオには向かないと判断し、今回のようなLinux + Apache構成での高可用環境を実現しています。
 
 🔗 [自己紹介ページ（GitHub Pages）はこちら](https://infra-startup.github.io/aws-dynamic-server-portfolio/)
 
