@@ -60,7 +60,7 @@ Auto Scaling、RDS、EFS、ALB、WAF、IAM、CloudWatchなどを組み合わせ�
 
 ## 🚀 今後の展望
 
-- LPIC-2の学習・資格取得
+- CCNA、LPIC-2の学習・資格取得
 
 ---
 
